@@ -4,7 +4,7 @@
  */
 
 package com.mycompany.tp0;
-
+import java.util.Scanner;
 /**
  *
  * @author Arthur
@@ -12,6 +12,12 @@ package com.mycompany.tp0;
 public class TP0 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        
+        System.out.println("Bonjour");
+        String prenom;
+Scanner sc;
+sc = new Scanner(System.in); System.out.println("Bonjour, quel est votre prenom ?"); prenom = sc.nextLine();
+    
+System.out.println("Au revoir");
     }
 }
