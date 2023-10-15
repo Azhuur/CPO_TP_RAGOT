@@ -4,6 +4,8 @@
  */
 package tp2_convertiseurobjet_ragot;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Arthur
