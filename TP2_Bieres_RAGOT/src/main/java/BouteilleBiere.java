@@ -19,6 +19,14 @@ System.out.println("Bouteille de " + nom +" (" + degreAlcool +
 " degres) \nBrasserie : " + brasserie ) ;
 }
 
+public boolean decapsuler() {
+    if (ouverte == false) {
+        return true; // Ouverture réussie
+    } else {
+        System.out.println("Erreur : biere déjà ouverte");
+        return false; // Ouverture échouée
+    }
+}
 public BouteilleBiere(String unNom, float unDegre, String
 uneBrasserie) {
 nom = unNom;
