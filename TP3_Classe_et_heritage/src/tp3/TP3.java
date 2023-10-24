@@ -43,11 +43,11 @@ public class TP3 {
             System.out.println(n_arme.get(i));
         
         }
-        Magicien magi1 = new Magicien ("Gandalf", 65, true);
+        Magicien magi1 = new Magicien ("Gandi", 65, true);
         System.out.println(n_arme.get(taille-1));
-        Magicien magi2 = new Magicien ("Garcimor", 44, false);
-        Guerrier g1 = new Guerrier ("Conan", 78, false);
-        Guerrier g2 = new Guerrier ("Lannister", 45, true);
+        Magicien magi2 = new Magicien ("Garcia lorca", 44, false);
+        Guerrier g1 = new Guerrier ("Camiseto", 78, false);
+        Guerrier g2 = new Guerrier ("Lahister", 45, true);
         
         ArrayList<Personnages> tab_p = new ArrayList<Personnages>();
         tab_p.add(magi1);
@@ -62,8 +62,8 @@ public class TP3 {
             System.out.println(tab_p.get(i));
             
         
-        Guerrier g3 = new Guerrier("océane le troll", 2, false);
-        Magicien m3 = new Magicien ("jules le gobelin", 8, false);
+        Guerrier g3 = new Guerrier("Arthur le troll", 2, false);
+        Magicien m3 = new Magicien ("Adrien le gobelin", 8, false);
         baton baton10 = new baton ("branche", 5 , 5);
         baton baton11 = new baton ("branche2", 5 , 5);
         baton baton12 = new baton ("branche3", 5 , 5);
