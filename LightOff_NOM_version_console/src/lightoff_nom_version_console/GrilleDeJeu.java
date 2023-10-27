@@ -100,7 +100,7 @@ public void activerDiagonaleMontante() {
  * Active aléatoirement une ligne, une colonne ou une diagonale de cellules.
  */
 public void activerLigneColonneOuDiagonaleAleatoire() {
-    // Utiliser un générateur de nombres aléatoires pour décider si l'on active
+    // Utilise un générateur de nombres aléatoires pour décider si l'on active
     // une ligne, une colonne ou une diagonale. Ensuite, appelez la méthode
     // correspondante en utilisant un autre nombre aléatoire pour choisir
     // la ligne ou la colonne.
@@ -124,8 +124,7 @@ public void activerLigneColonneOuDiagonaleAleatoire() {
  * @param nbTours Le nombre de tours de mélange.
  */
 public void melangerMatriceAleatoirement(int nbTours) {
-    // Effectuer nbTours de mélanges en utilisant la méthode
-    // activerLigneColonneOuDiagonaleAleatoire().
+    // Effectue nbTours de mélanges en utilisant la méthode
     for (int tour = 0; tour < nbTours; tour++) {
         activerLigneColonneOuDiagonaleAleatoire();
     }
@@ -153,7 +152,7 @@ public boolean cellulesToutesEteintes() {
 public String toString() {
     StringBuilder gridString = new StringBuilder();
 
-    // Affichez les indices des colonnes
+    // Affiche les indices des colonnes
     gridString.append("  ");
     for (int col = 0; col < nbColonnes; col++) {
         gridString.append(col).append(" ");
@@ -161,10 +160,10 @@ public String toString() {
     gridString.append("\n");
 
     for (int row = 0; row < nbLignes; row++) {
-        // Affichez l'indice de la ligne
+        // Affiche l'indice de la ligne
         gridString.append(row).append(" ");
 
-        // Affichez l'état des cellules pour cette ligne
+        // Affiche l'état des cellules pour cette ligne
         for (int col = 0; col < nbColonnes; col++) {
             gridString.append(matriceCellules[row][col]).append(" ");
         }

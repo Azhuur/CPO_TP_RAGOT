@@ -11,20 +11,37 @@ package lightoff_nom_version_console;
 
 import java.util.Scanner;
 
+/**
+ * La classe Partie représente le jeu et gère son déroulement.
+ */
 public class Partie {
     private GrilleDeJeu grille;
     private int nbCoups;
 
+    /**
+     * Constructeur de la classe Partie.
+     *
+     * @param grille La grille de jeu à utiliser pour la partie.
+     */
     public Partie(GrilleDeJeu grille) {
         this.grille = grille;
         nbCoups = 0;
     }
 
+    /**
+     * Initialise une nouvelle partie en éteignant toutes les cellules de la grille
+     * et en les mélangeant aléatoirement.
+     */
     public void initialiserPartie() {
         grille.eteindreToutesLesCellules();
         grille.melangerMatriceAleatoirement(50);
     }
 
+    /**
+     * entrée du jeu.
+     *
+     * @param args Les arguments de la ligne de commande (non utilisés).
+     */
     public static void main(String[] args) {
         GrilleDeJeu grille = new GrilleDeJeu(5, 5);
         Partie partie = new Partie(grille);
@@ -32,6 +49,9 @@ public class Partie {
         partie.lancerPartie();
     }
 
+    /**
+     * Démarre la partie et gère les tours 
+     */
     public void lancerPartie() {
         Scanner scanner = new Scanner(System.in);
 
