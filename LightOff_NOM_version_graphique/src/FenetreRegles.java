@@ -26,7 +26,7 @@ public class FenetreRegles extends JDialog {
                                              Bienvenue sur le jeu qui te permettra de faire passer le temps plus vite lors des repas de No\u00ebl interminables ;)
                                              
                                              
-                                             Les r\u00e8gles du jeu sont les suivantes : Une grille de cellules (allumées/éteintes) est génerée aléatoirement
+                                             Les r\u00e8gles du jeu sont les suivantes : Une grille de cellules allumées(jaune)/éteintes(blanc) est génerée aléatoirement
                                              le but du jeu : eteindre toutes les cellules pour remporter la partie en utilisant les boutons repr\u00e9sentant 
                                              les lignes, les colonnes, et les diagonales !
                                              
